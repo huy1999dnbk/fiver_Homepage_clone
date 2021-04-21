@@ -1,0 +1,188 @@
+.feedback {
+  padding: 0 $pd-05 + 2;
+  margin-bottom: $mg-08;
+  .feedback__content {
+    .feedback__carousel {
+      position: relative;
+      & > .owl-stage-outer + .owl-nav {
+        & > .owl-prev {
+          left: -2%;
+          @include styleOwlnav(41%);
+        }
+        & > .owl-next {
+          right: -2%;
+          @include styleOwlnav(41%);
+        }
+      }
+      a {
+        border-radius: $border-radius-1 + 1;
+        img {
+          display: block;
+          width: 100%;
+          border-radius: $border-radius-1 + 1;
+          height: 100%;
+          position: relative;
+        }
+        i {
+          @include styleButtonplay;
+          left: 46%;
+          background-color: $color-black-6;
+        }
+      }
+      .feedback__person {
+        display: flex;
+        align-items: center;
+        height: 36px;
+        h5 {
+          color: $color-gray-10;
+          font-weight: 400;
+          white-space: nowrap;
+          span {
+            border-left: 1px solid $color-gray-9;
+            width: 0;
+            height: 30px;
+            margin: 0 $mg-02 0 $mg-02 + 3;
+          }
+        }
+        img {
+          display: inline-block;
+          height: 36px;
+          width: auto;
+          margin: 0 0 $mg-01 - 1 0;
+        }
+      }
+      .blockquote {
+        p {
+          padding-top: $pd-03 - 4;
+          font-style: italic;
+          @include styleText($color-green-7, $fs-5, $line-height-3);
+        }
+      }
+      .feedback__info {
+        padding: 0 $pd-07 + 3 0 $pd-01 + 2;
+      }
+      .feedback__vid {
+        padding-right: 60px;
+      }
+      @include responsive("medium-3") {
+        .feedback__vid,
+        .feedback__info {
+          flex-basis: 100%;
+          padding: 0;
+        }
+        .feedback__info {
+          .blockquote {
+            p {
+              font-size: $fs-4 - 1;
+              line-height: $line-height-4 - 3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive("medium-3") {
+  .feedback {
+    padding: 0 $pd-04 - 1;
+    .feedback__content {
+      .feedback__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -5%;
+            @include styleOwlnav(21%);
+          }
+          & > .owl-next {
+            right: -5%;
+            @include styleOwlnav(21%);
+          }
+        }
+        .item {
+          .row {
+            margin: 0 !important;
+            .feedback__vid {
+              i {
+                left: 51%;
+              }
+            }
+            .feedback__person {
+              display: inline-block;
+              h5 {
+                text-align: left !important;
+                margin-bottom: 0;
+                white-space: normal;
+                span {
+                  display: none;
+                }
+              }
+              img {
+                display: inline-block;
+                margin-bottom: $mg-02;
+                width: auto;
+              }
+            }
+            .feedback__info {
+              margin: $mg-06 0 $mg-05 - 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 660px) and (max-width: 899px) {
+  .feedback {
+    .feedback__content {
+      .feedback__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -3%;
+            @include styleOwlnav(29%);
+          }
+          & > .owl-next {
+            right: -3%;
+            @include styleOwlnav(29%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1159px){
+  .feedback{
+    .feedback__content{
+      .feedback__carousel{
+        .item{
+          .row{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            .feedback__vid, .feedback__info{
+              flex-basis: 50%;
+              //padding-right: 0;
+            }
+            .feedback__info{
+              .blockquote{
+                p{
+                  font-size: $fs-4 - 1;
+                }
+              }
+            }
+            .feedback__person{
+              h5{
+                white-space: nowrap;
+              }
+            }
+            .feedback__vid{
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

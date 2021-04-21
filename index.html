@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr</title>
+
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+
+    <!--GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+
+    <!--BOOTSTRAP 4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--Owl carousel-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!--fancybox-->
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+
+    <!--MAIN CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!--headerNav-->
+    <!-- bai cua em o phan view neu mentor mo ma no bi thua khoang trang o phia duoi thi mentor reload trang hoac phong to thu trinh duyet la dc a, em cung khong hieu sao lai bi loi nay-->
+    <header class="headerNav">
+        <div class="header">
+            <nav class="navbar navbar-expand-md navbar-dark p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="23"
+                            height="19" viewBox="0 0 23 19">
+                            <g fill="#000000">
+                                <g fill="#000000">
+                                    <rect y="16" width="23" height="3" rx="1.5" fill="#000000"></rect>
+                                    <rect width="23" height="3" rx="1.5" fill="#000000"></rect>
+                                    <rect y="8" width="23" height="3" rx="1.5" fill="#000000"></rect>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </button>
+                <a class="navbar-brand" href="#">fiverr<span>.</span></a>
+                <li class="nav-item2">
+                    <a class="nav-link" href="#">Sign in</a>
+                </li>
+                <li class="nav-item1">
+                    <a class="nav-link" href="#">Join</a>
+                </li>
+                <div class="collapse navbar-collapse pt-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-xl-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fiverr Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa fa-globe pr-2"></i>English
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">$USD</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Become a Seller</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sign In</a>
+                        </li>
+                        <li class="nav-item pr-0">
+                            <a class="nav-link button__link pr-0" href="#">Join</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <div class="headerNav__carousel owl-carousel owl-theme">
+            <div class="item headerNav__item01">
+                <div class="item__detail">
+                    <span>Andrea, <b>Fashion Designer</b></span>
+                </div>
+            </div>
+            <div class="item headerNav__item02">
+                <div class="item__detail">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>Moon, <b>Marketing Expert</b></span>
+                </div>
+
+            </div>
+            <div class="item headerNav__item03">
+                <div class="item__detail">
+                    <span>Ritika, <b>Shoemaker and Designer</b></span>
+                </div>
+            </div>
+            <div class="item headerNav__item04">
+                <div class="item__detail">
+                    <span>Zach, <b>Bar Owner</b></span>
+                </div>
+            </div>
+            <div class="item headerNav__item05">
+                <div class="item__detail">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>Gabrielle, <b>Video Editor</b></span>
+                </div>
+            </div>
+        </div>
+        <div class="header__search">
+            <p>Find the perfect <i>freelance</i> services for your business </p>
+            <div class="input-group">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.8906 14.6531L12.0969 10.8594C12.025 10.7875 11.9313 10.75 11.8313 10.75H11.4187C12.4031 9.60938 13 8.125 13 6.5C13 2.90937 10.0906 0 6.5 0C2.90937 0 0 2.90937 0 6.5C0 10.0906 2.90937 13 6.5 13C8.125 13 9.60938 12.4031 10.75 11.4187V11.8313C10.75 11.9313 10.7906 12.025 10.8594 12.0969L14.6531 15.8906C14.8 16.0375 15.0375 16.0375 15.1844 15.8906L15.8906 15.1844C16.0375 15.0375 16.0375 14.8 15.8906 14.6531ZM6.5 11.5C3.7375 11.5 1.5 9.2625 1.5 6.5C1.5 3.7375 3.7375 1.5 6.5 1.5C9.2625 1.5 11.5 3.7375 11.5 6.5C11.5 9.2625 9.2625 11.5 6.5 11.5Z"
+                        fill="#95979D"></path>
+                </svg>
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                    placeholder='Try "building mobile app"'>
+                <div class="input-group-prepend button1">
+                    <div class="input-group-text input__search">Search</div>
+                </div>
+                <div class="header__popular d-flex mt-3">
+                    <span class="mr-1">Popular:</span>
+                    <nav class="nav">
+                        <a class="nav-link button__popular" href="#">Web and Mobile Design</a>
+                        <a class="nav-link button__popular" href="#">WordPress</a>
+                        <a class="nav-link button__popular" href="#">Logo Design</a>
+                        <a class="nav-link button__popular" href="#">Droshipping</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="trusted">
+            <div class="trusted__content d-flex">
+                <span>Trusted by:</span>
+                <nav class="nav flex-row">
+                    <a class="nav-link" href="#">
+                        <img src="./images/facebook.png" alt="fb">
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="./images/google.png" alt="gg">
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="./images/netflix.png" alt="netflix">
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="./images/PG.png" alt="pg">
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img src="./images/paypa.png" alt="pp">
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--View-->
+    <section class="view">
+        <div class="view__content">
+            <h2>Recently Viewed & More</h2>
+            <div class="view__carousel owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card">
+                        <div class="img-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./images/view40.jpg" alt="view40">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view8.jpg" alt="view8">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view10.jpg" alt="view10">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view12.png" alt="view12">
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card__person">
+                                <img src="./images/view5.jpg" alt="image5">
+                                <p>evelinaro</p>
+                            </div>
+                            <a class="card-title-01" href="#">I will design a modern creative landing page</a>
+                            <div class="view__star d-flex justify-content-between align-items-center">
+                                <div class="view__star__content">
+                                    <span><i class="far fa-star"></i>5.0</span>
+                                    <span>(57)</span>
+                                </div>
+                                <img class="view__pro" src="./images/viewpro.svg" alt="pro">
+                                <div class="card__overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr for quality and
+                                        services</p>
+                                </div>
+                            </div>
+
+                            <div class="view__starting d-flex">
+                                <i class="fa fa-heart"></i>
+                                <span><small>STARTING AT</small> $3,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="img-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./images/view46.jpg" alt="view46">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view45.jpg" alt="view45">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view43.png" alt="view43">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view42.png" alt="view42">
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card__person">
+                                <img src="./images/view44.jpg" alt="image5">
+                                <p>bekeenstudio</p>
+                            </div>
+                            <a class="card-title-01" href="#">I will design a customized website for you</a>
+                            <div class="view__star d-flex justify-content-between align-items-center">
+                                <div class="view__star__content">
+                                    <span><i class="far fa-star"></i>5.0</span>
+                                    <span>(57)</span>
+                                </div>
+                                <img class="view__pro" src="./images/viewpro.svg" alt="pro">
+                                <div class="card__overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr for quality and
+                                        services</p>
+                                </div>
+                            </div>
+
+                            <div class="view__starting d-flex">
+                                <i class="fa fa-heart"></i>
+                                <span><small>STARTING AT</small> $3,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="img-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./images/view41.jpg" alt="view41">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view37.jpg" alt="view37">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view36.png" alt="view36">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view35.jpg" alt="view35">
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card__person">
+                                <img src="./images/view39.png" alt="image39">
+                                <p>mijalzagier</p>
+                            </div>
+                            <a class="card-title-01" href="#">I will design and build a modern, bold website</a>
+                            <div class="view__star d-flex justify-content-between align-items-center">
+                                <div class="view__star__content">
+                                    <span><i class="far fa-star"></i>5.0</span>
+                                    <span>(57)</span>
+                                </div>
+                                <img class="view__pro" src="./images/viewpro.svg" alt="pro">
+                                <div class="card__overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr for quality and
+                                        services</p>
+                                </div>
+                            </div>
+
+                            <div class="view__starting d-flex">
+                                <i class="fa fa-heart"></i>
+                                <span><small>STARTING AT</small> $3,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="img-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./images/view34.jpg" alt="view34">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view32.jpg" alt="view32">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view29.jpg" alt="view31">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view28.jpg" alt="view28">
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card__person">
+                                <img src="./images/view33.png" alt="image33">
+                                <p>vasbystudio</p>
+                            </div>
+                            <a class="card-title-01" href="#">I will design album or single cover</a>
+                            <div class="view__star d-flex justify-content-between align-items-center">
+                                <div class="view__star__content">
+                                    <span><i class="far fa-star"></i>5.0</span>
+                                    <span>(57)</span>
+                                </div>
+                                <img class="view__pro" src="./images/viewpro.svg" alt="pro">
+                                <div class="card__overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr for quality and
+                                        services</p>
+                                </div>
+                            </div>
+
+                            <div class="view__starting d-flex">
+                                <i class="fa fa-heart"></i>
+                                <span><small>STARTING AT</small> $3,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="img-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./images/view24.jpg" alt="view40">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view23.jpg" alt="view8">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view21.jpg" alt="view10">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view18.png" alt="view12">
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card__person">
+                                <img src="./images/view31.jpg" alt="image31">
+                                <p>spickex</p>
+                            </div>
+                            <a class="card-title-01" href="#">I will professionally design a flyer, brochure, catalog or
+                                booklet</a>
+                            <div class="view__star d-flex justify-content-between align-items-center">
+                                <div class="view__star__content">
+                                    <span><i class="far fa-star"></i>5.0</span>
+                                    <span>(57)</span>
+                                </div>
+                                <img class="view__pro" src="./images/viewpro.svg" alt="pro">
+                                <div class="card__overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr for quality and
+                                        services</p>
+                                </div>
+                            </div>
+
+                            <div class="view__starting d-flex">
+                                <i class="fa fa-heart"></i>
+                                <span><small>STARTING AT</small> $3,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="img-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./images/view41.jpg" alt="view41">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view37.jpg" alt="view37">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view36.png" alt="view36">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view35.jpg" alt="view35">
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card__person">
+                                <img src="./images/view39.png" alt="image39">
+                                <p>mijalzagier</p>
+                            </div>
+                            <a class="card-title-01" href="#">I will design and build a modern, bold website</a>
+                            <div class="view__star d-flex justify-content-between align-items-center">
+                                <div class="view__star__content">
+                                    <span><i class="far fa-star"></i>5.0</span>
+                                    <span>(57)</span>
+                                </div>
+                                <img class="view__pro" src="./images/viewpro.svg" alt="pro">
+                                <div class="card__overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr for quality and
+                                        services</p>
+                                </div>
+                            </div>
+
+                            <div class="view__starting d-flex">
+                                <i class="fa fa-heart"></i>
+                                <span><small>STARTING AT</small> $3,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="img-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./images/view40.jpg" alt="view40">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view8.jpg" alt="view8">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view10.jpg" alt="view10">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view12.png" alt="view12">
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card__person">
+                                <img src="./images/view5.jpg" alt="image5">
+                                <p>evelinaro</p>
+                            </div>
+                            <a class="card-title-01" href="#">I will design a modern creative landing page</a>
+                            <div class="view__star d-flex justify-content-between align-items-center">
+                                <div class="view__star__content">
+                                    <span><i class="far fa-star"></i>5.0</span>
+                                    <span>(57)</span>
+                                </div>
+                                <img class="view__pro" src="./images/viewpro.svg" alt="pro">
+                                <div class="card__overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr for quality and
+                                        services</p>
+                                </div>
+                            </div>
+
+                            <div class="view__starting d-flex">
+                                <i class="fa fa-heart"></i>
+                                <span><small>STARTING AT</small> $3,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="img-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./images/view46.jpg" alt="view46">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view45.jpg" alt="view45">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view43.png" alt="view43">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view42.png" alt="view42">
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card__person">
+                                <img src="./images/view44.jpg" alt="image5">
+                                <p>bekeenstudio</p>
+                            </div>
+                            <a class="card-title-01" href="#">I will design a customized website for you</a>
+                            <div class="view__star d-flex justify-content-between align-items-center">
+                                <div class="view__star__content">
+                                    <span><i class="far fa-star"></i>5.0</span>
+                                    <span>(57)</span>
+                                </div>
+                                <img class="view__pro" src="./images/viewpro.svg" alt="pro">
+                                <div class="card__overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr for quality and
+                                        services</p>
+                                </div>
+                            </div>
+
+                            <div class="view__starting d-flex">
+                                <i class="fa fa-heart"></i>
+                                <span><small>STARTING AT</small> $3,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="img-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./images/view24.jpg" alt="view40">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view23.jpg" alt="view8">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view21.jpg" alt="view10">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view18.png" alt="view12">
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card__person">
+                                <img src="./images/view31.jpg" alt="image31">
+                                <p>spickex</p>
+                            </div>
+                            <a class="card-title-01" href="#">I will professionally design a flyer, brochure, catalog or
+                                booklet</a>
+                            <div class="view__star d-flex justify-content-between align-items-center">
+                                <div class="view__star__content">
+                                    <span><i class="far fa-star"></i>5.0</span>
+                                    <span>(57)</span>
+                                </div>
+                                <img class="view__pro" src="./images/viewpro.svg" alt="pro">
+                                <div class="card__overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr for quality and
+                                        services</p>
+                                </div>
+                            </div>
+
+                            <div class="view__starting d-flex">
+                                <i class="fa fa-heart"></i>
+                                <span><small>STARTING AT</small> $3,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <div class="img-carousel owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="./images/view34.jpg" alt="view34">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view32.jpg" alt="view32">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view29.jpg" alt="view31">
+                            </div>
+                            <div class="item">
+                                <img src="./images/view28.jpg" alt="view28">
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="card__person">
+                                <img src="./images/view33.png" alt="image33">
+                                <p>vasbystudio</p>
+                            </div>
+                            <a class="card-title-01" href="#">I will design album or single cover</a>
+                            <div class="view__star d-flex justify-content-between align-items-center">
+                                <div class="view__star__content">
+                                    <span><i class="far fa-star"></i>5.0</span>
+                                    <span>(57)</span>
+                                </div>
+                                <img class="view__pro" src="./images/viewpro.svg" alt="pro">
+                                <div class="card__overlay">
+                                    <p>This Gig is offered by unrivaled talent verified by Fiverr for quality and
+                                        services</p>
+                                </div>
+                            </div>
+
+                            <div class="view__starting d-flex">
+                                <i class="fa fa-heart"></i>
+                                <span><small>STARTING AT</small> $3,800</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="services">
+        <div class="services__content">
+            <h2>Popular professional services</h2>
+            <div class="services__carousel .owl__nav__carousel owl-carousel owl-theme">
+                <div class="item">
+                    <img src="./images/services6.jpg" alt="sv6">
+                    <div class="services__info">
+                        <h4>
+                            <small>Build your brand</small>
+                            Logo Design
+                        </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/services7.jpg" alt="sv7">
+                    <div class="services__info">
+                        <h4>
+                            <small>Customized your site</small>
+                            WordPress
+                        </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/services8.jpg" alt="sv8">
+                    <div class="services__info">
+                        <h4>
+                            <small>Share your message</small>
+                            Voice over
+                        </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/services9.jpg" alt="sv9">
+                    <div class="services__info">
+                        <h4>
+                            <small>Engage youe audience</small>
+                            Video Explainer
+                        </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/services10.jpg" alt="sv10">
+                    <div class="services__info">
+                        <h4>
+                            <small>Reach more customers</small>
+                            Social Media
+                        </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/services1.jpg" alt="sv1">
+                    <div class="services__info">
+                        <h4>
+                            <small>Unlock growth online</small>
+                            SEO
+                        </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/services2.jpg" alt="sv2">
+                    <div class="services__info">
+                        <h4>
+                            <small>Color your dreams</small>
+                            Illustration
+                        </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/services3.jpg" alt="sv3">
+                    <div class="services__info">
+                        <h4>
+                            <small>Go global</small>
+                            Translation
+                        </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/services4.jpg" alt="sv4">
+                    <div class="services__info">
+                        <h4>
+                            <small>Learn your business</small>
+                            Data Entry
+                        </h4>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/services5.jpg" alt="sv5">
+                    <div class="services__info">
+                        <h4>
+                            <small>Showcase your story</small>
+                            Book Covers
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BENEFIT -->
+    <section class="benefit">
+        <div class="benefit__content">
+            <div class="row">
+                <div class="benefit__info col-xl-5">
+                    <h2>A whole world of freelance talent at your fingertips</h2>
+                    <ul>
+                        <li>
+                            <div class="d-flex">
+                                <i class="fa fa-check"></i>
+                                <h6>The best for every budget</h6>
+                            </div>
+                            <p>Find high-quality services at every price point. No hourly rates, just project-based
+                                pricing.</p>
+                        </li>
+                        <li>
+                            <div class="d-flex">
+                                <i class="fa fa-check"></i>
+                                <h6>Quality work done quickly</h6>
+                            </div>
+                            <p>Find the right freelancer to begin working on your project within minutes.</p>
+                        </li>
+                        <li>
+                            <div class="d-flex">
+                                <i class="fa fa-check"></i>
+                                <h6>Protected payment, every time</h6>
+                            </div>
+                            <p>Always know what you'll pay upfront. Your payment isn't released until you approve the
+                                work.</p>
+                        </li>
+                        <li>
+                            <div class="d-flex">
+                                <i class="fa fa-check"></i>
+                                <h6>24/7 support</h6>
+                            </div>
+                            <p>Questions? Our round-the-clock support team is available to help anytime, anywhere.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-7 benefit__vid">
+                    <a data-fancybox data-width="900" data-height="506.25" data-small-btn="true"
+                        href="https://youtu.be/-1h8HQ6rd5U">
+                        <div class="benefit__img">
+                            <img src="./images/benefit-image.png" alt="benefit">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- EXPLORE -->
+    <section class="explore">
+        <div class="explore__content">
+            <h2>Explore the marketplace</h2>
+            <div class="row">
+                <div class="explore__item col-xl-3 text-center">
+                    <a href="#">
+                        <img src="./images/explore1.svg" alt="ex1">
+                        Graphics & Design
+                    </a>
+                </div>
+                <div class="explore__item col-xl-3 text-center">
+                    <a href="#">
+                        <img src="./images/explore2.svg" alt="ex2">
+                        Digital Marketing
+                    </a>
+                </div>
+                <div class="explore__item col-xl-3 text-center">
+                    <a href="#">
+                        <img src="./images/explore3.svg" alt="ex3">
+                        Writing & Translation
+                    </a>
+                </div>
+                <div class="explore__item col-xl-3 text-center">
+                    <a href="#">
+                        <img src="./images/explore4.svg" alt="ex4">
+                        Video & Animation
+                    </a>
+                </div>
+                <div class="explore__item col-xl-3 text-center">
+                    <a href="#">
+                        <img src="./images/explore5.svg" alt="ex5">
+                        Music & Audio
+                    </a>
+                </div>
+                <div class="explore__item col-xl-3 text-center">
+                    <a href="#">
+                        <img src="./images/explore6.svg" alt="ex6">
+                        Programming & Tech
+                    </a>
+                </div>
+                <div class="explore__item col-xl-3 text-center">
+                    <a href="#">
+                        <img src="./images/explore7.svg" alt="ex7">
+                        Business
+                    </a>
+                </div>
+                <div class="explore__item col-xl-3 text-center">
+                    <a href="#">
+                        <img src="./images/explore8.svg" alt="ex8">
+                        Lifestyle
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BUSINESS -->
+    <section class="business">
+        <div class="business__content">
+            <div class="row">
+                <div class="business__info col-xl-5">
+                    <div class="business__title">
+                        <p>fiverr <span>business.</span></p>
+                        <span class="business__atr">NEW</span>
+                    </div>
+                    <h2>
+                        A business solution designed for <span>teams</span>
+                    </h2>
+                    <p>Upgrade to a curated experience packed with tools and benefits, dedicated to businesses</p>
+                    <ul>
+                        <li class="d-flex">
+                            <i class="fa fa-check"></i>
+                            <h6>Connect to freelancers with proven business experience</h6>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fa fa-check"></i>
+                            <h6>Get matched with the perfect talent by a customer success manager</h6>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fa fa-check"></i>
+                            <h6>Manage teamwork and boost productivity with one powerful workspace</h6>
+                        </li>
+                    </ul>
+                    <a href="" class="button__business">
+                        Explore Fiverr Business
+                    </a>
+                </div>
+                <div class="business__img col-xl-7">
+                    <img src="./images/business.png" alt="business">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FEEDBACK -->
+    <section class="feedback">
+        <div class="feedback__content">
+            <div class="feedback__carousel owl-carousel owl-theme">
+                <div class="item">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 feedback__vid">
+                            <a data-fancybox data-width="900" data-height="506.25" data-small-btn="true"
+                                href="https://youtu.be/9ch_rkRwk1M">
+                                <img src="./images/feedback1.jpg" alt="fb1">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="col-xl-7 feedback__info">
+                            <div class="feedback__person">
+                                <h5>Caitlin Tormey, Chief Commercial Officer <span></span> </h5>
+                                <img src="./images/naadam.png" alt="naadam">
+                            </div>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"We've used Fiverr for Shopify web development, graphic design, and
+                                    backend web development. Working with Fiverr makes my job a little easier every
+                                    day."</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 feedback__vid">
+                            <a data-fancybox data-width="900" data-height="506.25" data-small-btn="true"
+                                href="https://www.youtube.com/watch?v=wxrqBcgobWg">
+                                <img src="./images/feedback2.jpg" alt="fb2">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="col-xl-7 feedback__info">
+                            <div class="feedback__person">
+                                <h5>Kay Kim, Co-Founder <span></span></h5>
+                                <img src="./images/rooted.png" alt="rooted">
+                            </div>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"It's extremely exciting that Fiverr has freelancers from all over the
+                                    world — it broadens the talent pool. One of the best things about Fiverr is that
+                                    while we're sleeping, someone's working."</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 feedback__vid">
+                            <a data-fancybox data-width="900" data-height="506.25" data-small-btn="true"
+                                href="https://www.youtube.com/watch?v=RB4P1HTmwLc">
+                                <img src="./images/feedback3.jpg" alt="fb3">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="col-xl-7 feedback__info">
+                            <div class="feedback__person">
+                                <h5>Tim and Dan Joo, Co-Founders <span></span></h5>
+                                <img src="./images/haer.png" alt="haer">
+
+                            </div>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"When you want to create a business bigger than yourself, you need a lot
+                                    of help. That's what Fiverr does."</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 feedback__vid">
+                            <a data-fancybox data-width="900" data-height="506.25" data-small-btn="true"
+                                href="https://www.youtube.com/watch?v=3OptGLA4EMM">
+                                <img src="./images/feedback4.jpg" alt="fb4">
+                                <i class="fa fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="col-xl-7 feedback__info">
+                            <div class="feedback__person">
+                                <h5>Brighid Gannon (DNP, PMHNP-BC), Co-Founder <span></span></h5>
+                                <img src="./images/lavender.png" alt="lavender">
+                            </div>
+                            <blockquote class="blockquote">
+                                <p class="mb-0">"We used Fiverr for SEO, our logo, website, copy, animated videos —
+                                    literally everything. It was like working with a human right next to you versus
+                                    being across the world."</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- LOGOMAKER -->
+    <section class="logo">
+        <div class="logo__content d-flex">
+            <div class="logo__info">
+                <div class="logo__title">
+                    <p>fiverr <span>logo maker.</span></p>
+                    <span class="logo__atr">BETA</span>
+                </div>
+                <h2>Make an incredible logo
+                    <br>
+                    <i>in minutes</i>
+                </h2>
+                <p class="logo__benefit">Pre-designed by top talent. Just add your touch.</p>
+                <a class="button__logo" href="">Try Fiverr Logo Maker</a>
+            </div>
+            <picture>
+                <source media="(min-width:1160px)"
+                    srcset="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1160,dpr_1.0/v1/attachments/generic_asset/asset/b49b1963f5f9008f5ff88bd449ec18f7-1608035772453/logo-maker-banner-wide-desktop-1352-2x.png">
+                <source media="(min-width:900px)"
+                    srcset="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1112,dpr_1.0/v1/attachments/generic_asset/asset/b49b1963f5f9008f5ff88bd449ec18f7-1608035772453/logo-maker-banner-wide-desktop-1352-2x.png">
+                <source media="(min-width:600px)"
+                    srcset="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_852,dpr_1.0/v1/attachments/generic_asset/asset/8610b9c7c90c338adc976e96051cbd6c-1608034070829/logo-maker-banner-tablet-852-2x.png">
+                <source media="(min-width:300px)"
+                    srcset="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_600,dpr_1.0/v1/attachments/generic_asset/asset/371199b9f34bad46149a6397e6ba2804-1608028502616/logo-maker-banner-mobile-552-2x.png">
+                <img alt="Flowers">
+            </picture>
+        </div>
+    </section>
+
+
+    <!-- DESIGN -->
+    <section class="design">
+        <div class="design__content">
+            <h2>Get inspired with projects made by our freelancers</h2>
+            <div class="design__carousel owl-carousel owl-theme">
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design4.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av5.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Illustration</a>
+                                <a href="#">by carmelacaldart0</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/desgin1.png" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av6.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Packaging Design</a>
+                                <a href="#">by mijalzagier</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design11.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av8.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">3D Models & Product Design</a>
+                                <a href="#">by artsi3d</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design10.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av9.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Packaging Design</a>
+                                <a href="#">by senatopcustudio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design2.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av2.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Logo Design</a>
+                                <a href="#">by niccoffman</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design9.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av1.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Flyer Design</a>
+                                <a href="#">by spickex</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design8.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av12.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Logo Design</a>
+                                <a href="#">by evelinaro</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design5.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av5.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Books & Album Covers</a>
+                                <a href="#">by vnuggz</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design7.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av3.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Illustration</a>
+                                <a href="#">by dvincentgomes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design12.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av7.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Brand Style Guides</a>
+                                <a href="#">by digitalgeria</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design6.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av4.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Web & Mobile Design</a>
+                                <a href="#">by paudmartins</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/design3.jpg" alt="Card image cap">
+                        <div class="card-body d-flex">
+                            <img src="./images/design_av10.jpg" alt="ava1">
+                            <div class="logo__design__info">
+                                <a href="#">Brochure Design</a>
+                                <a href="#">by designerheather</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="design__seemore" href="#">See More Projects <i class="fas fa-angle-right"></i></a>
+        </div>
+    </section>
+
+
+    <!-- GUIDE -->
+    <section class="guide">
+        <div class="guide__content">
+            <div class="guide__info">
+                <h2>Fiverr guides</h2>
+                <div class="row">
+                    <div class="col-12">
+                        <a class="card" href="#">
+                            <img src="./images/guide1.png" alt="g1">
+                            <h6>Start an online business and work form home</h6>
+                            <p>A complete guide to starting a small business online</p>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="card" href="#">
+                            <img src="./images/guide2.png" alt="g2">
+                            <h6>Digital marketing made easy</h6>
+                            <p>A practical guide to understand what is digital marketing</p>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="card" href="#">
+                            <img src="./images/guide3.png" alt="g3">
+                            <h6>Creat a logo for your business</h6>
+                            <p>A step-by-step guide to create a memorable business logo</p>
+                        </a>
+                    </div>
+                </div>
+                <a class="guide__seemore" href="#">
+                    See More Guides <i class="fas fa-angle-right"></i>
+                </a>
+            </div>
+            <div class="guide__img">
+                <h2>Find the <i>talent</i> needed to get your business <i>growing</i>.</h2>
+                <a class="button__started" href="#">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__info">
+                <div class="row">
+                    <div class="col">
+                        <h6>Categories</h6>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#">Graphics & Design</a>
+                            <a class="nav-link" href="#">Digital Marketing</a>
+                            <a class="nav-link" href="#">Writing & Translation</a>
+                            <a class="nav-link" href="#">Video & Animation</a>
+                            <a class="nav-link" href="#">Music & Audio</a>
+                            <a class="nav-link" href="#">Programing & Tech</a>
+                            <a class="nav-link" href="#">Business</a>
+                            <a class="nav-link" href="#">Lifestyle</a>
+                            <a class="nav-link" href="#">Sitemap</a>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <h6>About</h6>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#">Careers</a>
+                            <a class="nav-link" href="#">Press & News</a>
+                            <a class="nav-link" href="#">Partnerships</a>
+                            <a class="nav-link" href="#">Privacy Policy</a>
+                            <a class="nav-link" href="#">Terms of Service</a>
+                            <a class="nav-link" href="#">Intellectual Property Claims</a>
+                            <a class="nav-link" href="#">Investor Relations</a>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <h6>Support</h6>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#">Help & Support</a>
+                            <a class="nav-link" href="#">Trust & Safety</a>
+                            <a class="nav-link" href="#">Selling on Fiverr</a>
+                            <a class="nav-link" href="#">Buying on Fiverr</a>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <h6>Community</h6>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#">Events</a>
+                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="#">Forum</a>
+                            <a class="nav-link" href="#">Community Standards</a>
+                            <a class="nav-link" href="#">Podcast</a>
+                            <a class="nav-link" href="#">Affiliates</a>
+                            <a class="nav-link" href="#">Invite a Friend</a>
+                            <a class="nav-link" href="#">Become a Seller</a>
+                            <a class="nav-link" href="#">Fiverr Elevate
+                                <small>Exclusive Bnenefits</small>
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <h6>More from Fiverr</h6>
+                        <nav class="nav flex-column">
+                            <a class="nav-link" href="#">Fiverr Business</a>
+                            <a class="nav-link" href="#">Fiverr Pro</a>
+                            <a class="nav-link" href="#">Fiverr Studios</a>
+                            <a class="nav-link" href="#">Fiverr Logo Maker</a>
+                            <a class="nav-link" href="#">Fiverr Guides</a>
+                            <a class="nav-link" href="#">Get Inspired</a>
+                            <a class="nav-link" href="#">ClearVoice
+                                <small>Content Marketing</small>
+                            </a>
+                            <a class="nav-link" href="#">AND CO
+                                <small>Invoice software</small>
+                            </a>
+                            <a class="nav-link" href="#">Learn
+                                <small>Online Courses</small>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__contact row">
+                <div class="col-sm-12 ">
+                    <div class="footer__brand d-flex">
+                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="77" height="23" viewBox="0 0 91 27"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#7A7D85">
+                                <path
+                                    d="m82.9 13.1h-3.2c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-13.4h-2.6c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-18.4h6.1v2.8c1-2.2 2.4-2.8 4.4-2.8h7.4v2.8c1-2.2 2.4-2.8 4.4-2.8h2v5zm-25.6 5.6h-12.6c.3 2.1 1.6 3.2 3.8 3.2 1.6 0 2.8-.7 3.1-1.8l5.4 1.5c-1.3 3.2-4.6 5.1-8.5 5.1-6.6 0-9.6-5.1-9.6-9.5 0-4.3 2.6-9.4 9.2-9.4 7 0 9.3 5.2 9.3 9.1 0 .9 0 1.4-.1 1.8zm-5.9-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3.1.8-3.4 3zm-23.1 11.3h5.3l6.7-18.3h-6.1l-3.2 10.7-3.4-10.8h-6.1zm-24.9 0h6v-13.4h5.7v13.4h6v-18.4h-11.6v-1.1c0-1.2.9-2 2.3-2h3.5v-5h-4.4c-4.5 0-7.5 2.7-7.5 6.6v1.5h-3.4v5h3.4z"
+                                    fill="#7A7D85"></path>
+                            </g>
+                            <g fill="#7A7D85">
+                                <path
+                                    d="m90.4 23.3c0 2.1-1.6 3.7-3.8 3.7s-3.8-1.6-3.8-3.7 1.6-3.7 3.8-3.7c2.2-.1 3.8 1.5 3.8 3.7zm-.7 0c0-1.8-1.3-3.1-3.1-3.1s-3.1 1.3-3.1 3.1 1.3 3.1 3.1 3.1 3.1-1.4 3.1-3.1zm-1.7.8.1.9h-.7l-.1-.9c0-.3-.2-.5-.5-.5h-.8v1.4h-.7v-3.5h1.4c.7 0 1.2.4 1.2 1.1 0 .4-.2.6-.5.8.4.1.5.3.6.7zm-1.9-1h.7c.4 0 .5-.3.5-.5 0-.3-.2-.5-.5-.5h-.7z"
+                                    fill="#7A7D85"></path>
+                            </g>
+                        </svg>
+                        <span>&copy; Fiverr International Ltd. 2021</span>
+                    </div>
+                </div>
+                <div class="col-sm-12 ">
+                    <div class="footer__contact__detail d-flex">
+                        <nav class="nav ">
+                            <a class="nav-link nav-link1" href="#">
+                                <img class="footer__icon" src="./images/svgexport-17.svg" alt="twitter">
+                            </a>
+                            <a class="nav-link nav-link1" href="#">
+                                <img class="footer__icon" src="./images/svgexport-18.svg" alt="fb">
+                            </a>
+                            <a class="nav-link nav-link1" href="#">
+                                <img class="footer__icon" src="./images/svgexport-19.svg" alt="linkelin">
+                            </a>
+                            <a class="nav-link nav-link1" href="#">
+                                <img class="footer__icon" src="./images/svgexport-20.svg" alt="image">
+                            </a>
+                            <a class="nav-link nav-link1 pr-0" href="#">
+                                <img class="footer__icon" src="./images/svgexport-21.svg" alt="instagram">
+                            </a>
+                        </nav>
+                        <nav class="nav">
+                            <a class="nav-link nav-link2 pr-0 pt-0" href="#">
+                                <span class="nav__link__item1 d-flex align-items-center">
+                                    <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18"
+                                        viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M9 1C4.58875 1 1 4.58875 1 9C1 13.4113 4.58875 17 9 17C13.4113 17 17 13.4113 17 9C17 4.58875 13.4113 1 9 1ZM8.53125 4.92676C7.81812 4.89612 7.11218 4.7959 6.43811 4.63293C6.54578 4.37781 6.6626 4.13281 6.78857 3.90063C7.30542 2.94824 7.93994 2.27991 8.53125 2.03784V4.92676ZM8.53125 5.86499V8.53125H5.60339C5.64465 7.4906 5.82202 6.45752 6.11536 5.51782C6.8927 5.71362 7.70874 5.83215 8.53125 5.86499ZM8.53125 9.46875V12.135C7.70874 12.1678 6.8927 12.2864 6.11536 12.4822C5.82202 11.5425 5.64465 10.5094 5.60339 9.46875H8.53125ZM8.53125 13.0732V15.9622C7.93994 15.7201 7.30542 15.0518 6.78857 14.0994C6.6626 13.8672 6.54578 13.6222 6.43811 13.3671C7.11218 13.2041 7.81799 13.1039 8.53125 13.0732ZM9.46875 13.0732C10.1819 13.1039 10.8878 13.2041 11.5619 13.3671C11.4542 13.6222 11.3374 13.8672 11.2114 14.0994C10.6946 15.0518 10.0601 15.7201 9.46875 15.9622V13.0732ZM9.46875 12.135V9.46875H12.3966C12.3553 10.5094 12.178 11.5425 11.8846 12.4822C11.1073 12.2864 10.2913 12.1678 9.46875 12.135ZM9.46875 8.53125V5.86499C10.2913 5.83215 11.1073 5.71362 11.8846 5.51782C12.178 6.45752 12.3553 7.4906 12.3966 8.53125H9.46875ZM9.46875 4.92676V2.03784C10.0601 2.27991 10.6946 2.94824 11.2114 3.90063C11.3374 4.13281 11.4542 4.37781 11.5619 4.63293C10.8878 4.7959 10.1819 4.89612 9.46875 4.92676ZM12.0354 3.45349C11.8007 3.02087 11.5457 2.63953 11.2769 2.31421C12.2141 2.63428 13.0631 3.14636 13.7771 3.8031C13.3699 4.02124 12.931 4.21069 12.4694 4.36902C12.3384 4.0509 12.1936 3.74487 12.0354 3.45349ZM5.9646 3.45349C5.8064 3.74487 5.66162 4.0509 5.53064 4.36902C5.06897 4.21069 4.63013 4.02112 4.2229 3.8031C4.93689 3.14636 5.78589 2.63428 6.72314 2.31421C6.45435 2.63953 6.19946 3.02075 5.9646 3.45349ZM5.2135 5.25012C4.89355 6.27368 4.70544 7.38953 4.66492 8.53125H1.95349C2.05383 7.00769 2.63892 5.61438 3.5564 4.50525C4.06555 4.79724 4.62317 5.047 5.2135 5.25012ZM4.66492 9.46875C4.70544 10.6106 4.89355 11.7263 5.2135 12.7499C4.62317 12.953 4.06555 13.2028 3.5564 13.4948C2.63892 12.3856 2.05383 10.9923 1.95349 9.46875H4.66492ZM5.53064 13.631C5.66162 13.9491 5.8064 14.2551 5.9646 14.5465C6.19946 14.9791 6.45435 15.3605 6.72314 15.6858C5.78589 15.3657 4.93689 14.8536 4.22302 14.1969C4.63 13.9789 5.06897 13.7893 5.53064 13.631ZM12.0354 14.5465C12.1936 14.2551 12.3384 13.9491 12.4694 13.631C12.931 13.7893 13.3699 13.9789 13.7771 14.1969C13.0631 14.8536 12.2141 15.3657 11.2769 15.6858C11.5457 15.3605 11.8005 14.9792 12.0354 14.5465ZM12.7865 12.7499C13.1064 11.7263 13.2946 10.6105 13.3351 9.46875H16.0465C15.9462 10.9923 15.3611 12.3856 14.4436 13.4948C13.9344 13.2028 13.3768 12.953 12.7865 12.7499ZM13.3351 8.53125C13.2946 7.3894 13.1064 6.27368 12.7865 5.25012C13.3768 5.047 13.9344 4.79724 14.4436 4.50525C15.3611 5.61438 15.9462 7.00769 16.0465 8.53125H13.3351Z"
+                                            stroke-width="0.2px" fill="#7A7D85"></path>
+                                    </svg>
+                                    <span class="pl-2">English</span>
+                                </span>
+                            </a>
+                            <a class="nav-link nav-link2 pl-0 pr-2" href="#">
+                                <span class="nav__link__item2">$USD</span>
+                            </a>
+                            <a class="nav-link nav-link3 px-0" href="#">
+                                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32"
+                                    viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="16" cy="16" r="15.5" fill="#FFFFFF" stroke="#7A7D85"
+                                        class="circle-wrapper">
+                                    </circle>
+                                    <path
+                                        d="M16 11.5833C17.1506 11.5833 18.0834 10.6506 18.0834 9.49999C18.0834 8.3494 17.1506 7.41666 16 7.41666C14.8494 7.41666 13.9167 8.3494 13.9167 9.49999C13.9167 10.6506 14.8494 11.5833 16 11.5833Z"
+                                        fill="#7A7D85"></path>
+                                    <path
+                                        d="M23.9167 12.4167H8.08333C7.86232 12.4167 7.65036 12.5045 7.49408 12.6607C7.3378 12.817 7.25 13.029 7.25 13.25C7.25 13.471 7.3378 13.683 7.49408 13.8392C7.65036 13.9955 7.86232 14.0833 8.08333 14.0833H13.5V25.5417C13.5 25.8179 13.6097 26.0829 13.8051 26.2782C14.0004 26.4736 14.2654 26.5833 14.5417 26.5833C14.8179 26.5833 15.0829 26.4736 15.2782 26.2782C15.4736 26.0829 15.5833 25.8179 15.5833 25.5417V19.5H16.4167V25.5417C16.4167 25.8179 16.5264 26.0829 16.7218 26.2782C16.9171 26.4736 17.1821 26.5833 17.4583 26.5833C17.7346 26.5833 17.9996 26.4736 18.1949 26.2782C18.3903 26.0829 18.5 25.8179 18.5 25.5417V14.0833H23.9167C24.1377 14.0833 24.3496 13.9955 24.5059 13.8392C24.6622 13.683 24.75 13.471 24.75 13.25C24.75 13.029 24.6622 12.817 24.5059 12.6607C24.3496 12.5045 24.1377 12.4167 23.9167 12.4167Z"
+                                        fill="#7A7D85"></path>
+                                </svg>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!--Bootstrap 4-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--OWL CAROUSEL-->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.headerNav__carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+            }
+        })
+    </script>
+    <script>
+        $('.view__carousel').owlCarousel({
+            autoplay: false,
+            loop: true,
+            margin: 36,
+            nav: true,
+            dots: false,
+            autoWidth: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    autoWidth: false,
+                },
+                600: {
+                    items: 2,
+                    margin: 18,
+                    autoWidth: false,
+                },
+                800: {
+                    items: 3,
+                    margin: 18,
+                    autoWidth: false,
+                },
+                900: {
+                    items: 3,
+                    autoWidth: false,
+                },
+                1060: {
+                    items: 4,
+                    autoWidth: false,
+                },
+                1240: {
+                    items: 5,
+                    autoWidth: false,
+                },
+            }
+        })
+    </script>
+    <script>
+        $('.img-carousel').owlCarousel({
+            autoplay: false,
+            loop: true,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+            }
+        })
+    </script>
+    <script>
+        $('.services__carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            margin: 36,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2,
+                    margin: 18,
+                },
+                800: {
+                    items: 3,
+                    margin: 18,
+                },
+                900: {
+                    items: 3,
+                },
+                1060: {
+                    items: 4,
+                },
+                1240: {
+                    items: 5,
+                }
+            }
+        })
+    </script>
+    <script>
+        $('.feedback__carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+            }
+        })
+    </script>
+    <script>
+        $('.design__carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            autoWidth: true,
+            margin: 36,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    autoWidth: false,
+                },
+                600: {
+                    items: 2,
+                    autoWidth: false,
+                    margin: 9,
+                },
+                800: {
+                    item: 3,
+                    autoWidth: false,
+                    margin: 18,
+                },
+                1060: {
+                    items: 4,
+                    autoWidth: false,
+                }
+            }
+        })
+    </script>
+    <!--fancybox-->
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script>
+        $('[data-fancybox="gallery"]').fancybox({
+            // Options will go here
+        });
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

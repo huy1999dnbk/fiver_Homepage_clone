@@ -1,0 +1,98 @@
+.explore {
+  padding: 0 $pd-08;
+  margin-bottom: $mg-08;
+  h2 {
+    @include styleText($color-black-4, $fs-5 + 3, $fw-3);
+    padding-bottom: $pd-04 - 1;
+    margin-bottom: $mg-07 + 5;
+  }
+  .explore__content {
+    .row {
+      .explore__item {
+        padding: 0 $pd-02 $pd-10;
+      }
+      a {
+        position: relative;
+        display: inline-block;
+        margin: 0 auto;
+        text-decoration: none;
+        &:hover {
+          outline: none;
+          color: $color-black-3;
+        }
+        color: $color-black-3;
+        img {
+          width: 48px;
+          height: 48px;
+          display: block;
+          margin: 0 auto $mg-03;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 45px;
+          right: 50%;
+          width: 48px;
+          transform: translateX(50%);
+          padding: 0 0 $pd-02 - 2;
+          border-bottom: 2px solid $color-gray-9;
+          transition: all 0.25s ease;
+        }
+        &:hover::after{
+            width: 88px;
+            border-color: $color-green;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 899px){
+  .explore{
+    margin-bottom: $mg-11 - 6;
+    margin-top: 0;
+    .explore__content{
+      .row{
+        div{
+          flex-basis: 50%;
+        }
+        div:nth-child(7), div:last-child{
+          padding-bottom: $pd-03;
+        }
+      }
+    }
+  }
+}
+@include responsive("small-1"){
+  .explore{
+    margin-bottom: $mg-11 - 6;
+    margin-top: 0;
+    .explore__content{
+      .row{
+        div{
+          flex-basis: 50%;
+        }
+        div:nth-child(7), div:last-child{
+          padding-bottom: 0;
+        }
+        div:first-child, div:nth-child(2), div:nth-child(3), div:nth-child(4), div:nth-child(5), div:nth-child(6){
+          padding-bottom: $pd-06;
+        }
+      }
+    }
+  }
+}
+
+@include responsiveMinWidth("medium-2"){
+  .explore{
+    margin-bottom: $mg-11 - 6;
+    margin-top: 0;
+    .explore__content{
+      .row{
+        div{
+          flex-basis: 25%;
+        }
+      }
+    }
+  }
+}

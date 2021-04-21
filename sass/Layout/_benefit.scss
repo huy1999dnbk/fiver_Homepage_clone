@@ -1,0 +1,125 @@
+.benefit {
+  margin-bottom: $mg-08;
+  padding: $pd-09 $pd-08;
+  background-color: $color-green-4;
+  .benefit__info {
+    letter-spacing: 1px;
+    padding-right: 76px;
+    h2 {
+      padding-bottom: $pd-04 - 1;
+      @include styleText($color-black-4, $fs-5 + 3, $fw-3);
+    }
+    ul {
+      list-style: none;
+      li {
+        i {
+          @include styleCheck;
+        }
+        h6 {
+          @include styleText($color-black-4, $fs-3 - 2, $fw-3);
+          display: inline-block;
+          margin: $mg-01 - 3 0 0 $mg-02;
+        }
+        p {
+          font-size: $fs-3 - 2;
+          line-height: $line-height-1 + 4;
+          padding-top: $pd-02 - 2;
+        }
+      }
+    }
+  }
+  .benefit__vid {
+    padding: 0 $pd-03 - 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .benefit__img {
+      .img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: $border-radius-1 + 1;
+      }
+      i {
+        @include styleButtonplay;
+      }
+    }
+  }
+}
+
+@include responsive("medium-3") {
+  .benefit {
+    margin-bottom: $mg-10;
+    padding: $pd-07 + 3 $pd-04 - 1;
+    .benefit__content {
+      .row {
+        .benefit__info {
+          padding-right: $pd-02 + 5;
+        }
+        .benefit__info,
+        .benefit__vid {
+          flex-basis: 100%;
+        }
+        .benefit__vid {
+          display: inline-block;
+          .benefit__img {
+            img {
+              width: 100%;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsiveMinWidth("medium-2") {
+  .benefit {
+    .benefit__content {
+      .row {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        .benefit__info {
+          flex-basis: 45%;
+        }
+        .benefit__vid {
+          flex-basis: 55%;
+        }
+        .benefit__vid {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .benefit__img {
+            img {
+              width: 100%;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsiveMinWidth("medium-2") {
+  .benefit {
+    padding: $pd-09 $pd-05 + 2;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1159px){
+    .benefit{
+        padding: $pd-07 + 3 $pd-04 - 1;
+        .benefit__info{
+            ul{
+                li{
+                    p{
+                        margin-bottom: $mg-05;
+                    }
+                }
+            }
+        }
+    }
+}

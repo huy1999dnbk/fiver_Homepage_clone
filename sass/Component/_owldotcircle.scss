@@ -1,0 +1,13 @@
+.owl__nav__carousel {
+  position: relative;
+  & > .owl-stage-outer + .owl-nav {
+    & > .owl-prev {
+      left: -2%;
+      @include styleOwlnav(38%);
+    }
+    & > .owl-next {
+      right: -2%;
+      @include styleOwlnav(38%);
+    }
+  }
+}

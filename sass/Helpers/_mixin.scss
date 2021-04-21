@@ -1,0 +1,156 @@
+@mixin styleButton__li(
+  $bordercolor,
+  $color,
+  $pd-y,
+  $pd-x,
+  $bg-color,
+  $fs,
+  $fw,
+  $bd-r
+) {
+  border: 1px solid $bordercolor !important;
+  color: $color !important;
+  padding: $pd-y $pd-x !important;
+  background-color: $bg-color !important;
+  font-size: $fs !important;
+  font-weight: $fw !important;
+  cursor: pointer !important;
+  border-radius: $bd-r !important;
+  transition: all 0.2s;
+}
+
+@mixin hoverButton__li($color-hover, $border-hover, $bg-hover) {
+  color: $color-hover !important;
+  border: 1px solid $border-hover !important;
+  background-color: $bg-hover !important;
+}
+
+@mixin styleText($color-text, $fs-text, $fw-text) {
+  color: $color-text;
+  font-size: $fs-text;
+  font-weight: $fw-text;
+}
+
+@mixin styleOverlay($bottom, $left) {
+  position: absolute;
+  background-color: $color-black-3;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  bottom: $bottom;
+  left: $left;
+  z-index: 100000;
+  width: 250px;
+  display: none;
+  padding: $pd-01 + 2 $pd-02 - 1;
+  border-radius: $border-radius-1 + 1;
+  transition: 0.2s ease;
+  p {
+    @include styleText($color-white, $fs-1 + 3, $fw-3);
+    line-height: $line-height-2;
+    letter-spacing: $letter-spacing-1;
+    margin-bottom: 0;
+  }
+}
+
+@mixin overlayBefore($bottom1, $left1) {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: $color-black-3;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: $bottom1;
+  left: $left1;
+}
+
+@mixin styleOwlnavView($left) {
+  position: absolute;
+  left: $left;
+  top: 35%;
+  background-color: $color-white !important;
+  width: 17px;
+  height: 30px;
+  text-align: center;
+  span {
+    font-size: $fs-4;
+    line-height: $line-height-1 + 3;
+    color: transparent;
+  }
+  border: none;
+  &:focus {
+    outline: none;
+  }
+  transition: all 0.2s;
+}
+
+@mixin styleOwlnav($top) {
+  position: absolute;
+  top: $top;
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: $color-white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  span {
+    font-size: $fs-10 + 5;
+    color: #869791;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin styleButtonplay(){
+  line-height: 80px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  transform: translate(-50%,-50%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  font-size: $fs-5 - 2;
+  color: $color-white;
+  background-color: $color-black-5;
+}
+
+@mixin styleCheck(){
+  width: 23px;
+  height: 23px;
+  @include styleText($color-gray-2,$fs-1 + 1,$fw-3);
+  border-radius: 50%;
+  border: 2px solid $color-gray-2;
+  text-align: center;
+  line-height: $line-height-1 - 2;
+}
+
+
+@mixin responsive($screen){
+  @if map-has-key($map: $breakpoints, $key: $screen){
+    $value: map-get($map: $breakpoints, $key: $screen);
+    @media screen and (max-width: $value){
+      @content;
+    }
+  }
+  @else{
+    @warn "`{$screen}` isn't exist in breakpoints";
+  }
+}
+
+
+@mixin responsiveMinWidth($screen){
+  @if map-has-key($map: $breakpoints, $key: $screen){
+    $value: map-get($map: $breakpoints, $key: $screen);
+    @media screen and (min-width: $value){
+      @content;
+    }
+  }
+  @else{
+    @warn "`{$screen}` isn't exist in breakpoints";
+  }
+}
+

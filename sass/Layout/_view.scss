@@ -1,0 +1,435 @@
+.view {
+  padding: 0 $pd-05 + 2;
+  margin-bottom: $mg-09;
+  .view__content {
+    h2 {
+      //@include styleText($color-black-1, $fs-5 + 2, $fw-3);
+      margin-bottom: $mg-04;
+      font-weight: $fw-3;
+      color: $color-black-4;
+    }
+    .view__carousel {
+      position: relative;
+      & > .owl-stage-outer + .owl-nav {
+        & > .owl-prev {
+          left: -2%;
+          @include styleOwlnav(38%);
+        }
+        & > .owl-next {
+          right: -2%;
+          @include styleOwlnav(38%);
+        }
+      }
+      .owl-carousel {
+        display: flex;
+      }
+      .owl-carousel.owl-loaded {
+        display: block;
+      }
+      .item {
+        .card {
+          width: 227px;
+          &:hover .card-title-01 {
+            color: $color-green-3;
+          }
+          .card-body {
+            .card__person {
+              padding: $pd-02 + 2 $pd-02 + 2 $pd-02;
+              display: flex;
+              align-items: center;
+              img {
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+              }
+              p {
+                color: $color-black-2;
+                font-size: $fs-2 - 1;
+                cursor: pointer;
+                margin: 0 0 0 $mg-02;
+                font-weight: $fw-1;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            a {
+              text-decoration: none;
+              line-height: $line-height-1;
+              font-weight: 500;
+              cursor: pointer;
+              padding: 0 $pd-02 + 2 $pd-01;
+              display: inline-block;
+              margin-top: $mg-01;
+              color: $color-black-3;
+              transition: 0.15s ease-in-out;
+            }
+            .view__star {
+              position: relative;
+              padding: $pd-02 $pd-02 + 2;
+              .view__star__content {
+                span:first-child {
+                  @include styleText($color-green-3, $fs-2 - 1, $fw-3);
+                  i {
+                    font-weight: $fw-3;
+                    margin-right: $mg-01 - 3;
+                  }
+                }
+                span:last-child {
+                  @include styleText($color-gray-5, $fs-2 - 1, $fw-1);
+                }
+              }
+              .view__pro {
+                width: 84px;
+                height: 16px;
+                padding: 0;
+
+                &:hover + .card__overlay,
+                &:hover + .card__overlay01 {
+                  display: inline-block;
+                }
+              }
+              .card__overlay {
+                @include styleOverlay($pt-02, $pt-03);
+              }
+              .card__overlay::before {
+                @include overlayBefore($pt-04, $pt-05);
+              }
+              .card__overlay01 {
+                @include styleOverlay($pt-02, -10%);
+              }
+              .card__overlay01::before {
+                @include overlayBefore($pt-04, 220px);
+              }
+            }
+            .view__starting {
+              align-items: center;
+              justify-content: space-between;
+              padding: $pd-02 $pd-02 + 2;
+              border-top: 1px solid $color-gray-6;
+              margin-top: $mg-01 - 4;
+              i {
+                color: $color-gray-4;
+              }
+              span {
+                font-size: $fs-3 - 2;
+                font-weight: 500;
+                cursor: pointer;
+                small {
+                  color: $color-gray-7;
+                  font-size: $fs-1 + 2;
+                  padding: $pd-01 - 3 $pd-01 - 2 0 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*overlay*/
+@for $temp from 1 through 30 {
+  .view__carousel {
+    .owl-stage-outer {
+      .owl-stage {
+        .owl-item:nth-child(#{$temp}) {
+          z-index: 1000 - $temp;
+        }
+      }
+    }
+  }
+}
+
+@include responsive("small-1") {
+  .view {
+    padding: 0 $pd-04 - 1;
+    margin-bottom: $mg-10;
+    .view__content {
+      .view__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -5%;
+            @include styleOwlnav(50%);
+          }
+          & > .owl-next {
+            right: -5%;
+            @include styleOwlnav(50%);
+          }
+        }
+        .item {
+          .card {
+            .img-carousel {
+              .owl-nav {
+                .owl-prev {
+                  @include styleOwlnavView(-7%);
+                }
+              }
+              .owl-next {
+                @include styleOwlnavView(99%);
+              }
+            }
+            width: auto;
+            .card-body {
+              .view__star {
+                .card__overlay {
+                  @include styleOverlay($pt-02, 30%);
+                }
+                .card__overlay::before {
+                  @include overlayBefore($pt-04, 220px);
+                }
+              }
+            }
+            width: auto;
+            .card-body {
+              .view__star {
+                .card__overlay {
+                  @include styleOverlay($pt-02, 30%);
+                }
+                .card__overlay::before {
+                  @include overlayBefore($pt-04, 220px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .view {
+    padding: 0 $pd-04 - 1;
+    margin-bottom: $mg-10;
+    .view__content {
+      .view__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -5%;
+            @include styleOwlnav(50%);
+          }
+          & > .owl-next {
+            right: -5%;
+            @include styleOwlnav(50%);
+          }
+        }
+        .item {
+          .card {
+            .img-carousel {
+              .owl-nav {
+                .owl-prev {
+                  @include styleOwlnavView(-9.5%);
+                }
+              }
+              .owl-next {
+                @include styleOwlnavView(99%);
+              }
+            }
+            width: auto;
+            .card-body {
+              .view__star {
+                .card__overlay {
+                  @include styleOverlay($pt-02, 0%);
+                }
+                .card__overlay::before {
+                  @include overlayBefore($pt-04, 220px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 899px) {
+  .view {
+    padding: 0 $pd-04 - 1;
+    margin-bottom: $mg-10;
+    .view__content {
+      .view__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -3%;
+            @include styleOwlnav(40%);
+          }
+          & > .owl-next {
+            right: -3%;
+            @include styleOwlnav(40%);
+          }
+        }
+        .item {
+          .card {
+            .img-carousel {
+              .owl-nav {
+                .owl-prev {
+                  @include styleOwlnavView(-12%);
+                }
+              }
+              .owl-next {
+                @include styleOwlnavView(99%);
+              }
+            }
+            width: auto;
+            .card-body {
+              .view__star {
+                .card__overlay {
+                  @include styleOverlay($pt-02, 0%);
+                }
+                .card__overlay::before {
+                  @include overlayBefore($pt-04, 220px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1059px) {
+  .view {
+    padding: 0 $pd-04 - 1;
+    margin-bottom: $mg-10;
+    .view__content {
+      .view__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -3%;
+            @include styleOwlnav(40%);
+          }
+          & > .owl-next {
+            right: -3%;
+            @include styleOwlnav(40%);
+          }
+        }
+        .item {
+          .card {
+            .img-carousel {
+              .owl-nav {
+                .owl-prev {
+                  @include styleOwlnavView(-12%);
+                }
+              }
+              .owl-next {
+                @include styleOwlnavView(99%);
+              }
+            }
+            width: auto;
+            .card-body {
+              .view__star {
+                .card__overlay {
+                  @include styleOverlay($pt-02, 0%);
+                }
+                .card__overlay::before {
+                  @include overlayBefore($pt-04, 220px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1060px) and (max-width: 1239px) {
+  .view {
+    padding: 0 $pd-04 - 1;
+    margin-bottom: $mg-10;
+    .view__content {
+      .view__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -2%;
+            @include styleOwlnav(40%);
+          }
+          & > .owl-next {
+            right: -2%;
+            @include styleOwlnav(40%);
+          }
+        }
+        .item {
+          .card {
+            .img-carousel {
+              .owl-nav {
+                .owl-prev {
+                  @include styleOwlnavView(-12%);
+                }
+              }
+              .owl-next {
+                @include styleOwlnavView(99%);
+              }
+            }
+            width: 100%;
+            .card-body {
+              .view__star {
+                .card__overlay {
+                  @include styleOverlay($pt-02, 0%);
+                }
+                .card__overlay::before {
+                  @include overlayBefore($pt-04, 220px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsiveMinWidth("large-2") {
+  .view {
+    padding: 0 $pd-05 + 2;
+    margin-bottom: $mg-10;
+    .view__content {
+      .view__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -2%;
+            @include styleOwlnav(43%);
+          }
+          & > .owl-next {
+            right: -2%;
+            @include styleOwlnav(43%);
+          }
+        }
+        .item {
+          .card {
+            .img-carousel {
+              .owl-nav {
+                .owl-prev {
+                  @include styleOwlnavView(-13%);
+                }
+              }
+              .owl-next {
+                @include styleOwlnavView(99%);
+              }
+            }
+            width: 100%;
+            .card-body {
+              .view__star {
+                .card__overlay {
+                  @include styleOverlay($pt-02, 0%);
+                }
+                .card__overlay::before {
+                  @include overlayBefore($pt-04, 220px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

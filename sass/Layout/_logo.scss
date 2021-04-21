@@ -1,0 +1,119 @@
+.logo {
+  padding: 0 $pd-05 + 2;
+  margin-bottom: $mg-08;
+
+  .logo__content {
+    width: 100%;
+    position: relative;
+    padding: $pd-06 + 1 0 $pd-07 + 1 $pd-12;
+    background-color: $color-green-8;
+
+    picture {
+      z-index: 1;
+      img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .logo__info {
+      z-index: 100;
+      .logo__title {
+        p {
+          display: inline-block;
+          @include styleText($color-white, $fs-5 - 4, $fw-3);
+          span {
+            font-weight: normal;
+          }
+        }
+        .logo__atr {
+          display: inline-block;
+          background-color: $color-white;
+          @include styleText($color-green-8, $fs-1 + 1, $fw-3);
+          border-radius: 999px;
+          text-align: center;
+          padding: $pd-01 - 4 $pd-01 + 4 0;
+          vertical-align: text-bottom;
+          margin: $mg-01 + 1 0 $mg-01 - 3 $mg-01 - 2;
+        }
+      }
+      h2 {
+        z-index: 100;
+        @include styleText($color-white, $fs-10 - 1, $fw-3);
+        line-height: $line-height-4;
+        margin-bottom: $mg-02 - 2;
+        i {
+          font-weight: $fw-1;
+        }
+      }
+      .logo__benefit {
+        z-index: 100;
+        margin-bottom: $mg-07;
+        line-height: $line-height-1 + 2;
+        @include styleText($color-white, $fs-2 + 1, $fw-1);
+      }
+      a {
+        text-decoration: none;
+        z-index: 100;
+      }
+    }
+  }
+
+}
+
+@include responsive("small-1") {
+  .logo {
+    padding: 0;
+    margin-bottom: $mg-10;
+    background: $color-green-8;
+    .logo__content {
+      padding: 0;
+      flex-direction: column;
+      .logo__info {
+        z-index: 100 !important;
+        padding: $pd-07 + 3 $pd-04 - 1;
+      }
+      picture {
+        img {
+          height: 100%;
+          width: 100%;
+          display: block !important;
+          margin-top: -47%;
+         
+          position: relative !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 899px){
+  .logo{
+    .logo__content{
+      padding: 0;
+      flex-direction: column;
+      .logo__info{
+        padding: $pd-06 + 1 0 $pd-06 + 1 $pd-05 + 2;
+      }
+      picture{
+        img{
+          height: 100%;
+          width: 100%;
+          display: block !important;
+          margin-top: -30%;
+         
+          position: relative !important;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1159px){
+  .logo{
+    .logo__content{
+      padding-left: $pd-05 + 2;
+    }
+  }
+}

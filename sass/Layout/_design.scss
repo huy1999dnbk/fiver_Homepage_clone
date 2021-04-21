@@ -1,0 +1,257 @@
+.design {
+  background-color: $color-gray-11;
+  padding: $pd-09 $pd-05 + 1 $pd-09 $pd-05;
+  margin-bottom: $mg-08;
+  .design__content {
+    position: relative;
+    h2 {
+      letter-spacing: $letter-spacing-1;
+      @include styleText($color-black-1, $fs-5 + 3, $fw-3);
+      padding-bottom: $pd-04 - 1;
+      padding-right: 180px;
+    }
+    .design__seemore {
+      letter-spacing: $letter-spacing-1;
+      position: absolute;
+      top: $pt-06;
+      right: 0;
+      text-decoration: none;
+      color: $color-green-8;
+      font-size: $fs-2 + 1;
+      i {
+        font-weight: 600;
+        padding: 0 $pd-01 0 $pd-01 + 2;
+      }
+      &:hover {
+        color: $color-green-8;
+      }
+    }
+    .design__carousel {
+      position: relative;
+      & > .owl-stage-outer + .owl-nav {
+        & > .owl-prev {
+          left: -2%;
+          @include styleOwlnav(42%);
+        }
+        & > .owl-next {
+          right: -1.6%;
+          @include styleOwlnav(42%);
+        }
+      }
+      .item {
+        padding-bottom: $pd-02;
+        .card {
+          border: none;
+          width: 294px;
+          border-radius: $border-radius-1 + 1;
+          box-shadow: 0 0.14px 2.29266px rgba(0, 0, 0, 0.03),
+            0 0.37px 4.42626px rgba(0, 0, 0, 0.05),
+            0 3px 7px rgba(0, 0, 0, 0.09);
+
+          .card-img-top {
+            width: 100%;
+            display: block;
+            height: 237px;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+              opacity: 0.85 !important;
+            }
+          }
+          .card-body {
+            padding: $pd-03 - 4 0 $pd-02 + 2 $pd-03 - 4;
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+            }
+            .logo__design__info {
+              padding-left: $pd-02 + 2;
+              a:first-child {
+                display: block;
+                color: $color-black-4;
+                font-size: $fs-2;
+                font-weight: 700;
+                text-decoration: none;
+                white-space: nowrap;
+              }
+              a:last-child {
+                color: $color-gray-12;
+                font-size: $fs-2;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    @include responsive("small-1") {
+      .design__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -5%;
+            @include styleOwlnav(38%);
+          }
+          & > .owl-next {
+            right: -4.6%;
+            @include styleOwlnav(38%);
+          }
+        }
+        .item {
+          .card {
+            width: auto;
+            .card-body {
+              .logo__design__info {
+                a {
+                  font-size: $fs-2 + 1 !important;
+                  letter-spacing: $letter-spacing-1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include responsive("small-1") {
+  .design {
+    margin-bottom: $mg-10;
+    padding: $pd-07 + 3 $pd-04 - 1;
+    .design__content {
+      h2 {
+        font-size: $fs-5;
+        margin-bottom: 0;
+      }
+      .design__seemore {
+        display: block;
+        position: static;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .design {
+    padding: $pd-07 + 3 $pd-04 + 2 $pd-07 + 3 $pd-05 + 2;
+    .design__content {
+      .design__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -4%;
+            @include styleOwlnav(42%);
+          }
+          & > .owl-next {
+            right: -1.8%;
+            @include styleOwlnav(42%);
+          }
+        }
+        .item {
+          padding-right: $pd-02 - 1;
+          .card {
+            width: 100%;
+            overflow: visible;
+          }
+        }
+      }
+    }
+    .design__seemore {
+      display: block;
+      position: static !important;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 899px) {
+  .design {
+    padding: $pd-07 + 3 $pd-04 + 2 $pd-07 + 3 $pd-05 + 2;
+    .design__content {
+      .design__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -3%;
+            @include styleOwlnav(42%);
+          }
+          & > .owl-next {
+            right: -1.8%;
+            @include styleOwlnav(42%);
+          }
+        }
+        .item {
+          padding-right: $pd-02 - 1;
+          .card {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .design__seemore {
+      display: block !important;
+      position: static !important;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1059px) {
+  .design {
+    .design__content {
+      h2{
+        font-size: $fs-10 + 4;
+      }
+      .design__carousel {
+        position: relative;
+        & > .owl-stage-outer + .owl-nav {
+          & > .owl-prev {
+            left: -2.9%;
+            @include styleOwlnav(42%);
+          }
+          & > .owl-next {
+            right: -1.8%;
+            @include styleOwlnav(42%);
+          }
+        }
+        .item {
+          padding-right: $pd-02 - 1;
+          .card {
+            width: 100%;
+          }
+        }
+      }
+      .design__seemore {
+        position: absolute !important;
+        top: 60px !important;
+        right: 0 !important;
+      }
+    }
+  }
+}
+
+@include responsiveMinWidth("large-2"){
+  .design{
+    .design__content{
+      .design__carousel{
+        .item{
+          .card{
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 1060px) and (max-width: 1159px){
+  .design{
+    .design__content{
+      .design__seemore {
+        position: absolute !important;
+        top: 50px !important;
+        right: 0 !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.button__link {
+  @include styleButton__li(
+    $color-white,
+    $color-white,
+    $pd-01 - 1,
+    $pd-03,
+    transparent,
+    $fs-2 - 1,
+    $fw-3,
+    $border-radius-1
+  );
+  &:hover {
+    @include hoverButton__li($color-white, transparent, $color-green);
+  }
+}
+
+.button__popular {
+  @include styleButton__li(
+    $color-white,$color-white,$pd-01 - 4,$pd-02 + 2,transparent,$fs-2,$fw-2,$border-radius-2
+  );
+  &:hover{
+    @include hoverButton__li($color-black,transparent,$color-white);
+  }
+}
+
+.button__business, .button__started{
+  letter-spacing: $letter-spacing-1;
+  transition: 0.15 ease-in-out;
+  @include styleButton__li(transparent,$color-white,$pd-02 + 2,$pd-04 - 1,$color-green,$fs-2 + 1,$fw-2,$border-radius-1 + 1);
+  &:hover{
+    background-color: $color-green-2 !important;
+  }
+}
+
+
+
+.button__logo{
+  z-index: 999;
+  letter-spacing: $letter-spacing-1;
+  transition: 0.15 ease-in-out;
+  @include styleButton__li(transparent,$color-green-8,$pd-02 + 2,$pd-04 - 1,$color-white,$fs-2 + 1,$fw-1,$border-radius-1 + 1);
+  &:hover{
+    background-color: $color-white-1 !important;
+  }
+}

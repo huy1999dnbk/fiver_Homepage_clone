@@ -1,0 +1,193 @@
+.guide {
+  padding: 0 $pd-05 + 2;
+  margin-bottom: $mg-08;
+  .guide__content {
+    .guide__info {
+      margin-bottom: $mg-08;
+      position: relative;
+      h2 {
+        letter-spacing: $letter-spacing-1;
+        @include styleText($color-black-1, $fs-5 + 3, $fw-3);
+        padding-bottom: $pd-04 - 1;
+        margin-bottom: 0;
+      }
+      .guide__seemore {
+        letter-spacing: $letter-spacing-1;
+        position: absolute;
+        top: $pt-05;
+        right: 0;
+        text-decoration: none;
+        color: $color-green-8;
+        font-size: $fs-2 + 1;
+        i {
+          font-weight: 600;
+          padding: 0 $pd-01 0 $pd-01 + 2;
+        }
+        &:hover {
+          color: $color-green-8;
+        }
+      }
+      .card {
+        border: none;
+        text-decoration: none;
+        img {
+          width: 100%;
+          display: block;
+          border-radius: $border-radius-1 + 1;
+          transition: all 0.2s;
+          &:hover {
+            opacity: 0.85;
+          }
+        }
+        h6 {
+          margin: $mg-03 + 2 0 $mg-01 - 1;
+          @include styleText($color-black-1, $fs-3 - 0.5, $fw-3);
+          &:hover {
+            color: $color-black-1;
+          }
+        }
+        p {
+          @include styleText($color-gray-10, $fs-3 - 2.5, normal);
+        }
+      }
+    }
+    .guide__img {
+      padding: $pd-13 $pd-09;
+      background: url("../images/getstarted.png");
+      @extend %backgroundImg;
+      h2 {
+        font-size: $fs-7;
+        max-width: 650px;
+        color: $color-white;
+        padding: 0 $pd-02 + 2 $pd-06 + 5 0;
+        line-height: $line-height-0;
+        //font-weight: 500;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    @include responsive("small-1") {
+      .guide__img {
+        padding: $pd-07 + 3 $pd-04 - 1 $pd-10 - 1 $pd-04 - 1;
+        background: $color-brown;
+        h2 {
+          font-size: $fs-10 - 0.5;
+          line-height: $line-height-3 - 4;
+        }
+      }
+    }
+    @media screen and (min-width: 600px) and (max-width: 899px) {
+      .guide__img {
+        padding: $pd-11 $pd-05 + 2 $pd-14 + 1 $pd-05 + 2;
+        background: $color-brown;
+        h2 {
+          font-size: $fs-6 - 2;
+        }
+      }
+    }
+    @media screen and (min-width: 900px) and (max-width: 1159px) {
+      .guide__img {
+        padding: $pd-12 + 4 $pd-05 + 2 $pd-12 + 5 $pd-05 + 2 !important;
+        background: url("../images/getstarted900.png");
+        //background-position: 10% 10% !important;
+        background-repeat: no-repeat;
+        background-size: 100% 100% !important;
+        h2 {
+          font-size: $fs-6 - 2;
+        }
+      }
+    }
+  }
+  @include responsive("small-1") {
+    .guide__content {
+      .guide__info {
+        margin-bottom: $mg-10;
+        .row {
+          .card {
+            h6 {
+              @include styleText($color-black-1, $fs-2 + 2, $fw-2);
+              margin: $mg-02 + 2 0 0;
+            }
+            p {
+              @include styleText($color-gray-10, $fs-3 - 3, normal);
+              margin-bottom: $mg-06;
+            }
+          }
+        }
+        .guide__seemore {
+          display: block;
+          position: static;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    .guide__content {
+      .guide__info {
+        .row {
+          div:first-child,
+          div:last-child {
+            padding-right: $pd-01 + 3 !important;
+          }
+          div:nth-child(2) {
+            padding-left: $pd-01 + 3 !important;
+          }
+          div {
+            flex-basis: 50%;
+            .card {
+              h6 {
+                font-weight: $fw-1;
+              }
+              p {
+                margin-bottom: $mg-06;
+                font-size: $fs-3 - 2.8;
+              }
+            }
+          }
+        }
+        .guide__seemore {
+          display: block;
+          position: static;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 900px) and (max-width: 1159px) {
+    .guide__content {
+      .guide__info {
+        .row {
+          div {
+            flex-basis: 33.33%;
+          }
+          div:first-child {
+            padding-right: $pd-01 + 3;
+          }
+          div:nth-child(2) {
+            padding: 0 $pd-01 + 3;
+          }
+          div:last-child{
+            padding-left: $pd-01 + 3;
+          }
+        }
+      }
+    }
+  }
+  @include responsiveMinWidth("large-1"){
+    .guide__content{
+      .guide__info{
+        .row{
+          div{
+            flex-basis: 33.33%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include responsive("small-1") {
+  .guide {
+    padding: 0 $pd-04 - 1;
+  }
+}
